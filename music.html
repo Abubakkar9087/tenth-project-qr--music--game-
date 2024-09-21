@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="now-playing">Now Playing</div>
+        <div class="album-art">
+            <img src="img/Music.gif" alt="Album Art">
+        </div>
+        <div class="song-details">
+            <h3>Sooraj Dooba Hain Full Song</h3>
+            <p>Sooraj Dooba Hain Full Song</p>
+        </div>
+        <div class="progress-bar">
+            <input type="range" id="progress" value="0" max="100">
+            <div class="time">
+                <span id="current-time">0:00</span>
+                <span id="duration">5:30</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="shuffle" title="Shuffle">
+                <img src="img/shuffle.svg" alt="Shuffle">
+            </button>
+            <button id="prev" title="Previous">
+                <img src="img/previous.svg" alt="Previous">
+            </button>
+            <button id="play-pause" title="Play/Pause">
+                <img src="img/play.svg" alt="Play" id="play-icon">
+                <img src="img/pause.svg" alt="Pause" id="pause-icon" style="display: none;">
+            </button>
+            <button id="next" title="Next">
+                <img src="img/next.svg" alt="Next">
+            </button>
+            <button id="repeat" title="Repeat">
+                <img src="img/repeat.svg" alt="Repeat">
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

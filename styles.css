@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #99a2ac;
+  font-family: 'Arial', sans-serif;
+}
+
+.music-player {
+  background-color: #e4f2fa;
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow:inset -6px -5px 20px rgb(138, 138, 138);
+  text-align: center;
+  position: relative;
+}
+
+.album-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.album-art img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f0f0f0;
+}
+
+.now-playing {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.song-details h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.song-details p {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  margin-bottom: 20px;
+}
+
+.progress-bar input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.progress-bar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #4A90E2;
+}
+
+.progress-bar .time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.controls button {
+  background-color: white;
+  border: none;
+  box-shadow: inset -3px -4px 4px rgb(58, 58, 58);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.controls button img {
+  width: 20px;
+  height: 20px;
+}
+
+.controls button:active {
+  transform: scale(0.9);
+}
+
+#play-pause {
+  /* background-color: #4A90E2; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+@media only screen and (max-width: 600px) {
+  .music-player {
+      width: 100%;
+      max-width: 350px;
+  }
+}
